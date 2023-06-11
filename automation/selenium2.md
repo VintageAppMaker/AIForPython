@@ -50,10 +50,12 @@ driver.quit()
 이 예제를 확장하여 Chrome 브라우저에서 클릭, 텍스트 입력, 요소 검색 등 다양한 작업을 수행할 수 있습니다. Selenium의 자세한 사용법은 Selenium 공식 문서를 참조하시기 바랍니다.
 
 Person: 
-- 1. chrome 드라이버를 소스가 존재하는 경로에 저장했습니다. 
+```
+1. chrome 드라이버를 소스가 존재하는 경로에 저장했습니다. 
 2. www.google.com에 가서 "Vintage appMaker"를 검색합니다. 
 3. 결과 화면을 capture.png로 저장합니다. 
 소스를 만들어주세요
+```
 
 ChatGPT: 
 - 아래의 코드는 Python에서 Selenium을 사용하여 Chrome 브라우저를 제어하여 Google 검색을 수행하고 결과 화면을 capture.png로 저장하는 예제입니다.
