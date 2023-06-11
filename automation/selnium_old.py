@@ -1,3 +1,6 @@
+# https://github.com/VintageAppMaker/pySelenium 
+# 내용수정 -> HTML이 바뀌었음.
+
 import time
 
 from selenium import webdriver
