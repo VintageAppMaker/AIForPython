@@ -1,3 +1,11 @@
+# 드라이버 다운로드 필수
+> Automation이므로 EXE와 통신하는 것이다. 그러므로 드라이버가 필수이다.
+- 자신의 브라우저 버전을 채크한다. 
+- 해당 버전에 맞는 드라이버를 다운로드 한다(구글이 아닌 [크로니옴 사이트](https://chromedriver.storage.googleapis.com/index.html)에서 받는다). 
+- 경로를 설정한다. 
+
+----
+
 
 Person: 
 - python에서 chrome 브라우저를 제어하는 예제를 보여주세요

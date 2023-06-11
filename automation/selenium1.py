@@ -1,7 +1,7 @@
 from selenium import webdriver
 
 # Chrome WebDriver의 경로를 지정합니다.
-webdriver_path = ''
+webdriver_path = 'c:\\github\\chromedriver.exe'
 
 # Chrome WebDriver를 생성합니다.
 driver = webdriver.Chrome(executable_path=webdriver_path)
