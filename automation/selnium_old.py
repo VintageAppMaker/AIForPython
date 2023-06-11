@@ -3,6 +3,7 @@
 
 import time
 
+from selenium.webdriver.common.by import By
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
@@ -18,18 +19,25 @@ def doGetWeather():
     options = Options()
     options.headless = False
     browser = webdriver.Chrome(executable_path=chrome_path, options=options)
+    print(browser)
 
     # 날씨검색
     browser.get("https://www.google.com/search?q=%EB%82%A0%EC%94%A8&sourceid=chrome&ie=UTF-8")
     time.sleep(3)
 
     # 날씨출력
-    where   = browser.find_elements_by_xpath("//*[@id=\"wob_loc\"]")
+    # 크롬드라이버가 충돌시 find_elements_by_xpath 사용못함 
+    #where   = browser.find_elements_by_xpath("//*[@id=\"wob_loc\"]")
+    where   = browser.find_elements(By.XPATH,"//*[@id=\"wob_loc\"]")
     print("위치:" + where[0].text)
-    curtime = browser.find_elements_by_xpath("//*[@id=\"wob_dts\"]")
+    
+    #curtime = browser.find_elements_by_xpath("//*[@id=\"wob_dts\"]")
+    curtime = browser.find_elements(By.XPATH, "//*[@id=\"wob_dts\"]")
+    
     print("시간:" + curtime[0].text +"\n")
 
-    temp = browser.find_elements_by_xpath("// *[ @ id = \"wob_tm\"]")
+    #temp = browser.find_elements_by_xpath("// *[ @ id = \"wob_tm\"]")
+    temp = browser.find_elements(By.XPATH, "// *[ @ id = \"wob_tm\"]")
     print("온도:" + temp[0].text + "\n\n")
 
     browser.close()
@@ -60,7 +68,8 @@ def NaverVK():
     ]
 
     for k in keys:
-        vk = browser.find_element_by_xpath(k)
+        #vk = browser.find_element_by_xpath(k)
+        vk = browser.find_element(By.XPATH, k)
         vk.click()
         time.sleep(1)
 
