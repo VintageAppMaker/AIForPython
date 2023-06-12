@@ -1,0 +1,5 @@
+2023-06-12 07:13:48.469 winauto2.py[33] selectByChildTree -> Find Control Timeout(10s): {ControlType: EditControl}
+2023-06-12 07:14:15.517 winauto2.py[33] selectByChildTree -> Find Control Timeout(10s): {ControlType: EditControl}
+2023-06-12 07:14:56.080 winauto2.py[72] CaculatorShow -> Find Control Timeout(10s): {Name: '0', ControlType: ButtonControl}
+2023-06-12 07:15:25.717 winauto2.py[72] CaculatorShow -> Find Control Timeout(10s): {Name: '0', ControlType: ButtonControl}
+2023-06-12 07:16:27.741 winauto2.py[72] CaculatorShow -> 
