@@ -5,6 +5,11 @@
 # 3. 결과 화면을 capture.png로 저장합니다. 
 # 소스를 만들어주세요
 
+# mac에서 셀리니움 설치
+# pip3 install selenium
+# brew install --cask chromedriver
+# pip3 install webdriver_manager
+		
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
@@ -14,8 +19,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 from selenium.webdriver.support import expected_conditions as EC
 
-# Chrome WebDriver의 경로를 지정합니다.
-webdriver_path = 'c:\\github\\chromedriver.exe'
+# Chrome WebDriver의 경로를 지정합니다. <- mac에서는 서비스매니저 사용함.
+# webdriver_path = 'c:\\github\\chromedriver.exe'
 
 # Chrome WebDriver를 생성합니다.
 driver = webdriver.Chrome(service= Service(ChromeDriverManager().install()))
