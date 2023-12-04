@@ -20,7 +20,7 @@ slide.shapes.add_picture(image, left, top)
 left = Inches(1)
 top = Inches(4)
 width = height = Inches(5)
-text_box = slide.shapes.add_textbox(left, top, width, height)7
+text_box = slide.shapes.add_textbox(left, top, width, height)
 text_frame = text_box.text_frame
 text_frame.word_wrap = True
 p = text_frame.add_paragraph()
